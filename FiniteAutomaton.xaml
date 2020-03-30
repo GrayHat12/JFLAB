@@ -1,0 +1,63 @@
+﻿<Window x:Class="JFLAB.FiniteAutomaton"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JFLAB"
+        Background="#252526"
+        Icon="favicon.ico"
+        mc:Ignorable="d"
+        Title="Finite Automaton" Height="450" Width="800">
+    <Grid>
+
+        <DockPanel Height="20" VerticalAlignment="Top" Background="#3E3E42" Width="800">
+            <Menu DockPanel.Dock="Top" BorderThickness="0" Foreground="#3E3E42" Background="#3E3E42">
+                <MenuItem Header="_File" BorderThickness="0" Background="#3E3E42" Foreground="White">
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_New..." InputGestureText="Ctrl+N"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Open..." InputGestureText="Ctrl+O"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Save" InputGestureText="Ctrl+S"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Save As..." InputGestureText="Ctrl+Shift+S"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Save Image As...">
+                        <MenuItem BorderThickness="0" Background="#686868" Header="_Save Graph as JPG"/>
+                        <MenuItem BorderThickness="0" Background="#686868" Header="_Save Graph as PNG"/>
+                        <MenuItem BorderThickness="0" Background="#686868" Header="_Save Graph as GIF"/>
+                        <MenuItem BorderThickness="0" Background="#686868" Header="_Save Graph as BMP"/>
+                    </MenuItem>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Dismiss Tab" IsEnabled="False" InputGestureText="Ctrl+Esc"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Close" InputGestureText="Ctrl+W"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Print" InputGestureText="Ctrl+P"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Quit" InputGestureText="Ctrl+Q"/>
+                </MenuItem>
+                <MenuItem Header="_Input" BorderThickness="0" Background="#3E3E42" Foreground="White">
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Step with Closure" InputGestureText="Ctrl+R"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Save by State" InputGestureText="Ctrl+Shift+R"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Fast Run..."/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Multiple Run" InputGestureText="Ctrl+M"/>
+                </MenuItem>
+                <MenuItem Header="_Test" BorderThickness="0" Background="#3E3E42" Foreground="White">
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Compare Equivalence"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Hide Nondeterminism"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Highlight λ-Transitions"/>
+                </MenuItem>
+                <MenuItem Header="_View" BorderThickness="0" Background="#3E3E42" Foreground="White">
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Save Current Graph Layout"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Restore Saved Graph Layout" IsEnabled="False"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Move Vertices">
+                        <MenuItem BorderThickness="0" Background="#686868" Header="_Reflect Across Line">
+                            <MenuItem BorderThickness="0" Background="#686868" Header="_Apply A Algorithm"/>
+                        </MenuItem>
+                    </MenuItem>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Apply A Random Layout Algorithm"/>
+                    <MenuItem BorderThickness="0" Background="#686868" Header="_Apply A Specific Layout Algorithm">
+                        
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Convert" BorderThickness="0" Background="#3E3E42" Foreground="White">
+                </MenuItem>
+                <MenuItem Header="_Help" BorderThickness="0" Background="#3E3E42" Foreground="White">
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
+    </Grid>
+</Window>
